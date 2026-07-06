@@ -1,0 +1,139 @@
+.let-learning-section {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.let-learning-card {
+  background: linear-gradient(135deg, #2c4159 0%, #1e2c3d 100%);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem;
+  position: relative;
+  min-height: 380px;
+  overflow: visible;
+  box-shadow: 0 20px 40px rgba(26, 35, 65, 0.2);
+}
+
+
+.ll-content {
+  flex: 1;
+  color: white;
+  padding: 3rem 0;
+  z-index: 2;
+  max-width: 60%;
+}
+
+.ll-content h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ll-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+.btn-yellow {
+  background-color: #fbbc05;
+  color: #1a2341;
+  font-weight: 800;
+  padding: 1.2rem 2.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-transform: uppercase;
+  display: inline-block;
+  box-shadow: 0 8px 15px rgba(251, 188, 5, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.btn-yellow:hover {
+  background-color: #f2a900;
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(251, 188, 5, 0.4);
+}
+
+.ll-image-container {
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  height: 125%; /* to make the image overflow at the top */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+  width: 40%;
+}
+
+
+.ll-image {
+  height: 100%;
+  max-height: 480px;
+  object-fit: contain;
+  object-position: bottom;
+  z-index: 1;
+  position: relative;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+}
+
+@media (max-width: 992px) {
+  .let-learning-card {
+    flex-direction: column;
+    padding: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  
+  .ll-content {
+    max-width: 100%;
+    padding: 0 0 2rem 0;
+  }
+  
+  .ll-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .ll-break {
+    display: none;
+  }
+  
+  .ll-image-container {
+    position: relative;
+    right: 0;
+    height: 350px;
+    width: 100%;
+  }
+  
+  
+  .ll-image {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ll-content h2 {
+    font-size: 2rem;
+  }
+  
+  .ll-content p {
+    font-size: 1rem;
+  }
+  
+  .btn-yellow {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+}

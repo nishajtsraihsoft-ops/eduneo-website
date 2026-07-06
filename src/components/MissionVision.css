@@ -1,0 +1,52 @@
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.mv-card {
+  padding: 3rem 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white; /* Override default glass-card bg */
+}
+
+.mv-card:hover {
+  border-color: var(--primary-main);
+}
+
+.mv-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.mv-card:hover .mv-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.bg-blue-light { background: rgba(59, 130, 246, 0.1); }
+.text-blue { color: var(--primary-main); }
+
+.bg-purple-light { background: rgba(139, 92, 246, 0.1); }
+.text-purple { color: #8b5cf6; }
+
+.mv-card h3 {
+  font-size: 1.75rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+}
+
+.mv-card p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin: 0;
+}

@@ -1,0 +1,47 @@
+.topper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.topper-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: white; /* Override glass for contrast */
+  transition: all 0.3s ease;
+}
+
+.topper-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.topper-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.topper-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.topper-card:hover .topper-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.topper-card h4 {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1.4;
+}

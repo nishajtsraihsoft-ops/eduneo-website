@@ -1,0 +1,97 @@
+.features-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.path-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  transition: all 0.3s ease;
+  background: white; /* Override glass-card for better contrast here if needed, or keep glass */
+}
+
+.path-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-main);
+}
+
+.path-item:hover .path-icon {
+  color: white;
+  background: var(--gradient-primary);
+  transform: scale(1.1);
+}
+
+.path-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  color: var(--primary-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.path-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.path-item p {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0;
+  color: var(--text-main);
+}
+
+.features-content h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark);
+}
+
+.features-content p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-content {
+    order: -1;
+  }
+}
+
+@media (max-width: 576px) {
+  .path-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .path-item {
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+    border: 1px solid rgba(0,0,0,0.03);
+    padding: 2rem 1.5rem;
+  }
+}

@@ -1,0 +1,83 @@
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.activity-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: white; /* Base */
+  padding: 2.5rem 2rem;
+}
+
+/* Themes using CSS Variables for dynamic colors */
+.theme-blue { --ac-color: var(--primary-main); --ac-bg: rgba(59, 130, 246, 0.1); }
+.theme-orange { --ac-color: #f97316; --ac-bg: rgba(249, 115, 22, 0.1); }
+.theme-purple { --ac-color: #8b5cf6; --ac-bg: rgba(139, 92, 246, 0.1); }
+.theme-green { --ac-color: #10b981; --ac-bg: rgba(16, 185, 129, 0.1); }
+
+.activity-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: var(--ac-color);
+  transition: height 0.3s ease;
+}
+
+.activity-card:hover::before {
+  height: 100%;
+  opacity: 0.05;
+}
+
+.activity-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-lg);
+  background: var(--ac-bg);
+  color: var(--ac-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.activity-icon-wrapper svg {
+  width: 32px;
+  height: 32px;
+}
+
+.activity-card:hover .activity-icon-wrapper {
+  transform: translateY(-5px);
+  background: var(--ac-color);
+  color: white;
+  box-shadow: 0 10px 15px -3px var(--ac-bg);
+}
+
+.activity-content h3 {
+  font-size: 1.5rem;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.activity-content p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.activity-content button {
+  border-color: var(--ac-color);
+  color: var(--ac-color);
+}
+
+.activity-content button:hover {
+  background: var(--ac-color);
+  color: white;
+}

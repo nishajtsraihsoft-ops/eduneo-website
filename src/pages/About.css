@@ -1,0 +1,451 @@
+/* About.css Redesign - Clean and Simple */
+
+.about-page {
+  background-color: #fcfdfe;
+  overflow-x: hidden;
+}
+
+/* Hero Section (Exact Design) */
+.custom-about-hero {
+  display: flex;
+  min-height: 350px;
+  background-color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Design Elements */
+.hero-floating-element {
+  position: absolute;
+  z-index: 0;
+  animation: float 6s ease-in-out infinite;
+}
+
+.element-edu-1 {
+  top: 15%;
+  left: 5%;
+  opacity: 0.7;
+  transform: rotate(-10deg);
+}
+
+.element-edu-2 {
+  bottom: 20%;
+  left: 42%;
+  opacity: 0.6;
+  animation-delay: 1.2s;
+  transform: rotate(15deg);
+}
+
+.element-edu-3 {
+  top: 12%;
+  right: 48%;
+  opacity: 0.7;
+  animation-delay: 2.5s;
+  transform: rotate(45deg);
+}
+
+.element-edu-4 {
+  bottom: 12%;
+  right: 6%;
+  opacity: 0.5;
+  animation-delay: 0.8s;
+  transform: rotate(-15deg);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.custom-hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 5% 4rem 10%;
+  background-color: white;
+}
+
+.custom-hero-left-content {
+  max-width: 550px;
+}
+
+.custom-about-label {
+  color: #e5602b;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.custom-hero-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.custom-hero-paragraph {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.custom-hero-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* Creative Blob Image Shape */
+.creative-blob-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+.creative-blob-bg {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 95%;
+  height: 95%;
+  background-color: #f7cd55; /* Eduneo Yellow */
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.creative-blob-container:hover .creative-blob-bg {
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  transform: rotate(5deg);
+}
+
+.creative-blob-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  z-index: 2;
+  border: 6px solid #ffffff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.5s ease-in-out;
+}
+
+.creative-blob-container:hover .creative-blob-img {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+
+
+/* Mission, Vision, Values Minimal Design */
+.mvg-minimal-section {
+  padding: 4rem 0 6rem 0;
+  background-color: #ffffff;
+}
+
+.mvg-minimal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mvg-minimal-card {
+  background: white;
+  border-radius: 16px;
+  border: 3px solid #1a1a1a;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mvg-minimal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.mvg-minimal-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #e7612f; /* Orange */
+  margin: 0 0 1rem 0;
+}
+
+.mvg-minimal-card p {
+  color: #333333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+
+/* Parents Trust Light Premium Redesign */
+.trust-section-light {
+  padding: 6rem 0 8rem 0;
+  background-color: #fcfdfe; /* Clean light background */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Horizontal Stats Banner */
+.trust-stats-horizontal-light {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  background: transparent;
+  margin-bottom: 4rem;
+}
+
+.stat-item-light {
+  text-align: center;
+  padding: 0 1.5rem;
+  border-right: 2px dashed #eaeaea;
+  flex: 1;
+}
+
+.stat-item-light:last-child {
+  border-right: none;
+}
+
+.stat-number-light {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 0.25rem;
+  line-height: 1;
+}
+
+.stat-label-light {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Accent Colors for Stats */
+.text-yellow { color: #f7cd55; }
+.text-orange { color: #e7612f; }
+.text-blue-light { color: #55a8e0; }
+.text-green { color: #67a775; }
+
+/* Trust Header */
+.trust-header-light {
+  max-width: 700px;
+  margin: 0 auto 4rem auto;
+}
+
+.trust-header-light h2 {
+  font-size: 2.75rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-bottom: 1.25rem;
+}
+
+.trust-header-light p {
+  font-size: 1.15rem;
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* Feature Grid */
+.trust-features-grid-light {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.trust-feature-card-light {
+  background: white;
+  border: 3px solid #1a1a1a;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trust-feature-card-light:hover {
+  transform: translateY(-8px) translateX(-2px);
+  box-shadow: 8px 12px 0px rgba(0,0,0,0.06);
+}
+
+.trust-icon-wrapper-light {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border: 2px solid rgba(0,0,0,0.05);
+}
+
+/* Soft Glow Backgrounds for Icons */
+.bg-blue-glow { background: rgba(85, 168, 224, 0.15); }
+.bg-orange-glow { background: rgba(231, 97, 47, 0.15); }
+.bg-yellow-glow { background: rgba(247, 205, 85, 0.15); }
+
+.trust-feature-card-light h4 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+}
+
+.trust-feature-card-light p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
+  .trust-stats-horizontal-light {
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .stat-item-light {
+    border-right: none;
+    min-width: 40%;
+  }
+  .trust-features-grid-light {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Shared typography */
+.text-highlight {
+  color: #e7612f;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #1b4a83;
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive Overrides */
+@media (max-width: 968px) {
+  .custom-about-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .custom-hero-left {
+    padding: 3rem 1.5rem;
+  }
+  .mvg-minimal-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+  }
+  
+  .grid-cols-3, .grid-cols-4, .story-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .trust-section .grid {
+    grid-template-columns: 1fr !important;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-hero-heading {
+    font-size: 2.5rem;
+  }
+  .grid-cols-3, .grid-cols-4, .trust-stats-grid, .story-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .mvg-minimal-card, .trust-feature-card-light {
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.05);
+    border-radius: 24px;
+  }
+  
+  .about-hero-clean h1 {
+    font-size: 2.5rem;
+  }
+
+  .story-floating-card {
+    right: 0;
+    bottom: -30px;
+    width: 90%;
+    left: 5%;
+  }
+
+  .story-content {
+    margin-top: 2rem;
+  }
+}
+
+/* Dark Hero Shapes for About Page */
+.about-hero-right-dark {
+  background-color: #0f172a !important; /* dark slate */
+}
+
+.about-geometric-bg {
+  background-color: #0f172a !important;
+}
+
+.dark-shape-1 {
+  top: 0; left: 0; width: 35%; height: 25%;
+  background-color: #1e293b;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.dark-shape-2 {
+  top: 0; right: 0; width: 65%; height: 25%;
+  background-color: #334155;
+}
+
+.dark-shape-3 {
+  top: 25%; left: 0; width: 70%; height: 35%;
+  background-color: #1b4a83; /* Eduneo blue */
+}
+
+.dark-shape-4 {
+  bottom: 0; left: 0; width: 100%; height: 40%;
+  background-color: #0f172a;
+  border-top: 2px solid #1e293b;
+}
+
+.dark-shape-5 {
+  top: 25%; right: 0; width: 30%; height: 35%;
+  background-color: #475569;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 30% 50%, 0 0);
+}
+
+.dark-shape-6 {
+  top: 60%; right: 0; width: 30%; height: 25%;
+  background-color: #e7612f; /* Keep one vibrant accent color */
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 30% 50%, 0 0);
+}

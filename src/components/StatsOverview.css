@@ -1,0 +1,84 @@
+.stats-overview-section {
+  background: var(--gradient-dark);
+  color: white;
+  overflow: hidden;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media (min-width: 992px) {
+  .stats-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.stats-header {
+  flex: 1;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .stats-header {
+    text-align: left;
+    max-width: 400px;
+  }
+}
+
+.stats-grid {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  animation: slideUpFadeIn 0.8s ease-out forwards;
+}
+
+.stat-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  color: #94a3b8;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.text-gradient-light {
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+@keyframes slideUpFadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 576px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,200 @@
+.about-eduneo-section {
+  padding: 6rem 0;
+  background-color: #f3f4f6;
+  color: #111827;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 85vh; /* Increased grid height */
+}
+
+/* Left Side Icons */
+.icon-path-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.winding-path-svg {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+}
+
+.icons-grid-4x4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Make row 2 and 4 flow right to left visually by reordering */
+.icons-grid-4x4 .path-icon-item:nth-child(5) { order: 8; }
+.icons-grid-4x4 .path-icon-item:nth-child(6) { order: 7; }
+.icons-grid-4x4 .path-icon-item:nth-child(7) { order: 6; }
+.icons-grid-4x4 .path-icon-item:nth-child(8) { order: 5; }
+
+.icons-grid-4x4 .path-icon-item:nth-child(13) { order: 16; }
+.icons-grid-4x4 .path-icon-item:nth-child(14) { order: 15; }
+.icons-grid-4x4 .path-icon-item:nth-child(15) { order: 14; }
+.icons-grid-4x4 .path-icon-item:nth-child(16) { order: 13; }
+
+.path-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  order: 0; /* Default order */
+}
+
+.path-icon-circle {
+  width: 65px;
+  height: 65px;
+  background: white;
+  border: 2px solid #2d4a36; /* Dark green stroke */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2d4a36;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.path-icon-item:hover .path-icon-circle {
+  transform: scale(1.1);
+  background: #2d4a36;
+  color: white;
+}
+
+.path-icon-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2d4a36;
+  line-height: 1.2;
+}
+
+/* Right Side Content */
+.about-content {
+  max-width: 600px;
+}
+
+.about-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.about-subheading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.book-trial-btn {
+  display: inline-block;
+  background: #000;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.book-trial-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 968px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .winding-path-svg {
+    display: none; /* Hide SVG on mobile as layout breaks */
+  }
+  
+  /* Reset order for mobile */
+  .icons-grid-4x4 .path-icon-item {
+    order: 0 !important;
+  }
+  
+  .about-heading {
+    font-size: 2.5rem;
+  }
+
+  .decor-dice {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .icons-grid-4x4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+  .about-heading {
+    font-size: 2rem;
+  }
+  .path-icon-circle {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* Decorative Dice */
+.decor-dice {
+  position: absolute;
+  width: 150px;
+  opacity: 0.8;
+  animation: float 8s ease-in-out infinite alternate;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.dice-left {
+  top: 10%;
+  left: -50px;
+  transform: rotate(-15deg);
+}
+
+.dice-right {
+  bottom: 20%;
+  right: -50px;
+  transform: rotate(20deg);
+  animation-delay: 2s;
+}
+
+
+

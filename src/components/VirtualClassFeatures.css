@@ -1,0 +1,61 @@
+.virtual-features {
+  background-color: var(--bg-alt);
+}
+
+.vc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.vc-card {
+  padding: 2.5rem 2rem;
+  background: white; /* Override glass for contrast */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.vc-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.vc-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-pill);
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.vc-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.vc-card:hover .vc-icon {
+  background: var(--gradient-primary);
+  color: white;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.vc-card h3 {
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.vc-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}

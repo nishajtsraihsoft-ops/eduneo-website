@@ -1,0 +1,139 @@
+.testimonials-section {
+  background-color: #d8dadd; /* light gray from image */
+  padding: 6rem 0;
+}
+
+.ts-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2rem;
+}
+
+.ts-title-col {
+  flex: 1;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.ts-title-col h2 {
+  font-size: 1.6rem;
+  color: #1a1640; /* dark navy */
+  font-weight: 800;
+  margin: 0;
+}
+
+.ts-desc-col {
+  flex: 2;
+  border-left: 1px solid transparent; /* Just for spacing if needed */
+}
+
+.ts-desc-col p {
+  color: #4a5568;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.ts-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ts-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.ts-avatar-wrapper {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 5px; /* Creates the colored ring if image has bg, or gives space for cutouts */
+}
+
+.bg-red { background-color: #e94b59; }
+.bg-blue { background-color: #2b84c8; }
+.bg-yellow { background-color: #f1b308; }
+
+.ts-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.ts-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem; /* Gap between top and bottom text groups */
+}
+
+.ts-info-top, .ts-info-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.ts-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+  margin: 0 0 0.2rem 0;
+  text-transform: uppercase;
+}
+
+.ts-demographics {
+  font-size: 0.9rem;
+  color: #4a5568;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.ts-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #111;
+  margin: 0 0 0.2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.ts-subtitle {
+  font-size: 0.85rem;
+  color: #4a5568;
+  text-transform: uppercase;
+}
+
+@media (max-width: 992px) {
+  .ts-cards-container {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  .ts-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ts-title-col {
+    text-align: center;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,132 @@
+.blog {
+  background: white;
+  padding: 6rem 0;
+}
+
+.blog-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.the-box {
+  background: var(--ps-yellow);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  font-weight: 800;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
+}
+
+.title-wrapper h2 {
+  font-size: 4rem;
+  color: var(--ps-pink);
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+}
+
+.blog-subtitle {
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(180px, auto);
+  gap: 1.5rem;
+}
+
+.blog-card {
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  color: white;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.large-card {
+  grid-row: span 2;
+}
+
+.bg-blue-card { background-color: var(--ps-blue); }
+.bg-yellow-card { background-color: var(--ps-yellow); }
+.bg-pink-card { background-color: var(--ps-pink); }
+
+.card-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.tag-badge {
+  background: white;
+  color: var(--text-main);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.btn-circle-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.post-date {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.blog-card h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin: 0;
+  line-height: 1.3;
+}
+
+@media (max-width: 992px) {
+  .blog-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .title-wrapper h2 { font-size: 3rem; }
+}
+
+@media (max-width: 768px) {
+  .blog-grid { grid-template-columns: 1fr; }
+  .large-card { grid-row: span 1; }
+  .title-wrapper h2 { font-size: 2.2rem; }
+}

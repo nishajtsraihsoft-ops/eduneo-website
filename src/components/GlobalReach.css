@@ -1,0 +1,57 @@
+.flags-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flag-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-pill); /* Pill shape looks better for flags */
+  animation: zoomIn 0.5s ease-out backwards;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flag-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: var(--shadow-glow-blue);
+  border-color: rgba(59, 130, 246, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.flag-emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.country-name {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .flags-grid {
+    gap: 1rem;
+  }
+  .flag-card {
+    padding: 0.75rem 1.5rem;
+  }
+  .flag-emoji {
+    font-size: 1.5rem;
+  }
+  .country-name {
+    font-size: 0.95rem;
+  }
+}

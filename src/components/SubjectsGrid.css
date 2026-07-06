@@ -1,0 +1,52 @@
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.subject-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background: white; /* Override glass */
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.subject-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-light);
+}
+
+.subject-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--bg-alt);
+  color: var(--primary-main);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.subject-card:hover .subject-icon {
+  background: var(--gradient-primary);
+  color: white;
+  transform: scale(1.1);
+}
+
+.subject-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.subject-card h4 {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin: 0;
+}

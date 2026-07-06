@@ -1,0 +1,62 @@
+.trust-stats-section {
+  padding: 3rem 0;
+  background-color: var(--primary-main);
+  background-image: var(--gradient-primary);
+  color: white;
+}
+
+.trust-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.trust-stat-item {
+  position: relative;
+}
+
+.trust-stat-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -1rem;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.trust-stat-item h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.trust-stat-item p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .trust-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+  }
+  
+  .trust-stat-item:nth-child(2)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .trust-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .trust-stat-item::after {
+    display: none;
+  }
+}

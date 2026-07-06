@@ -1,0 +1,50 @@
+.cta-section {
+  padding: 4rem 0 6rem 0; /* A bit less top padding if it's following another section closely */
+}
+
+.cta-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: var(--gradient-dark);
+}
+
+@media (min-width: 992px) {
+  .cta-card {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 4rem;
+  }
+}
+
+.cta-content h2 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.cta-content p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 576px) {
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cta-actions a, .cta-actions button {
+    width: 100%;
+  }
+}
