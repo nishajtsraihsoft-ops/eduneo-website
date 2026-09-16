@@ -1,11 +1,11 @@
 import React from 'react';
-import { Book, Mic, Edit3, MessageSquare, Mic2, FileText, Headphones, PenTool, BookOpen, Pen, BookMarked, Smile, Star, Brain, Eye, Users } from 'lucide-react';
+import { Book, Mic, Edit3, MessageSquare, Mic2, FileText, Headphones, PenTool, BookOpen, Pen, BookMarked, Smile, Star, Brain, Eye, Users, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './AboutEduNeo.css';
 
 const AboutEduNeo = () => {
-  const icons = [
+  const desktopIcons = [
     { icon: Book, label: 'LKG & UKG' },
     { icon: Mic, label: 'GRADES 1-4' },
     { icon: Edit3, label: 'GRADES 5-8' },
@@ -22,6 +22,19 @@ const AboutEduNeo = () => {
     { icon: Brain, label: 'CONCEPTUAL' },
     { icon: Eye, label: 'REGULAR TESTS' },
     { icon: Users, label: 'DOUBT CLEARING' }
+  ];
+
+  const mobileIcons = [
+    { icon: Book, label: 'LKG & UKG' },
+    { icon: GraduationCap, label: 'Grade 1–12' },
+    { icon: FileText, label: 'Kerala State, CBSE, ICSE, ISC & NIOS' },
+    { icon: BookOpen, label: 'One-Teacher Programs' },
+    { icon: Pen, label: 'Batch Classes' },
+    { icon: BookMarked, label: 'Expert Teachers' },
+    { icon: Smile, label: 'Dedicated Mentor Support' },
+    { icon: Headphones, label: 'Live Interactive Classes' },
+    { icon: PenTool, label: 'Recorded Sessions' },
+    { icon: Users, label: 'Doubt Clearing & Regular Assessments' }
   ];
 
   const containerVariants = {
@@ -55,11 +68,11 @@ const AboutEduNeo = () => {
 
           {/* Left Side: Winding Icon Path */}
           <div className="icon-path-container">
-            <svg className="winding-path-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <svg className="winding-path-svg desktop-only-path" viewBox="0 0 100 100" preserveAspectRatio="none">
               <motion.path 
                 d="M 12.5 12.5 L 87.5 12.5 A 12.5 12.5 0 0 1 100 25 L 100 25 A 12.5 12.5 0 0 1 87.5 37.5 L 12.5 37.5 A 12.5 12.5 0 0 0 0 50 L 0 50 A 12.5 12.5 0 0 0 12.5 62.5 L 87.5 62.5 A 12.5 12.5 0 0 1 100 75 L 100 75 A 12.5 12.5 0 0 1 87.5 87.5 L 12.5 87.5" 
                 fill="none" 
-                stroke="#2d4a36" 
+                stroke="#0A0E1A" 
                 strokeWidth="0.5" 
                 strokeLinecap="round" 
                 strokeLinejoin="round" 
@@ -70,20 +83,44 @@ const AboutEduNeo = () => {
               />
             </svg>
 
+            {/* Desktop Grid (16 items) */}
             <motion.div 
-              className="icons-grid-4x4"
+              className="icons-grid-4x4 desktop-only-grid"
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.1 }}
             >
-              {icons.map((item, index) => {
-                // To match the snake path visually, row 2 and 4 should be reversed in layout
-                // CSS will handle the actual visual reversal or we can do it in flex
+              {desktopIcons.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <motion.div 
                     className="path-icon-item hover-parent" 
+                    key={index}
+                    variants={itemVariants}
+                  >
+                    <div className="path-icon-circle hover-bounce">
+                      <Icon size={24} strokeWidth={1.5} />
+                    </div>
+                    <span className="path-icon-label">{item.label}</span>
+                  </motion.div>
+                );
+              })}
+            </motion.div>
+
+            {/* Mobile Grid (10 items shortened) */}
+            <motion.div 
+              className="icons-grid-mobile mobile-only-grid"
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              {mobileIcons.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <motion.div 
+                    className="path-icon-item mobile-icon-item hover-parent" 
                     key={index}
                     variants={itemVariants}
                   >

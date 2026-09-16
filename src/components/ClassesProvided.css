@@ -13,18 +13,18 @@
 .cp-header h2 {
   font-size: 3rem;
   font-weight: 900;
-  color: #1a1a1a;
+  color: #0A0E1A;
   margin-bottom: 0.75rem;
   letter-spacing: -0.5px;
 }
 
 .cp-header .text-highlight {
-  color: #e7612f;
+  color: #0A0E1A;
 }
 
 .cp-subtitle {
   font-size: 1.15rem;
-  color: #666;
+  color: #64748b;
   max-width: 550px;
   margin: 0 auto;
 }
@@ -44,7 +44,7 @@
 }
 
 .class-pill {
-  background: #111;
+  background: #264790;
   color: #fff;
   font-weight: 800;
   font-size: 1.1rem;
@@ -55,7 +55,7 @@
   letter-spacing: 1px;
   cursor: pointer;
   border: 2.5px solid transparent;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px rgba(38, 71, 144, 0.15);
   transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
@@ -65,39 +65,39 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 60%);
   pointer-events: none;
 }
 
 .class-pill:hover {
   transform: translateY(-6px) scale(1.04);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
-  border-color: #8b5cf6;
-  background: #1b1b2f;
+  box-shadow: 0 14px 28px rgba(68, 166, 217, 0.3);
+  border-color: #44a6d9;
+  background: #1b3369;
 }
 
-/* PLUS pills get a special purple accent */
+/* PLUS pills get a special brand gradient */
 .plus-pill {
-  border-color: #8b5cf6;
-  background: linear-gradient(135deg, #1b1b2f 0%, #2d1b69 100%);
+  border-color: #44a6d9;
+  background: linear-gradient(135deg, #264790 0%, #44a6d9 100%);
 }
 
 .plus-pill:hover {
-  background: linear-gradient(135deg, #2d1b69 0%, #4c1d95 100%);
-  border-color: #a78bfa;
+  background: linear-gradient(135deg, #1f3b78 0%, #308ec4 100%);
+  border-color: #7bd6ff;
 }
 
 /* Quote Card */
 .cp-quote-card {
   position: relative;
-  background: linear-gradient(135deg, #1b4a83 0%, #153b6a 100%);
+  background: linear-gradient(135deg, #264790 0%, #1a3369 100%);
   color: white;
   padding: 3rem 3.5rem;
   border-radius: 24px;
   max-width: 650px;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 15px 40px rgba(27, 74, 131, 0.2);
+  box-shadow: 0 15px 40px rgba(38, 71, 144, 0.25);
 }
 
 .quote-icon-bg {
@@ -120,7 +120,7 @@
   margin-top: 1.25rem;
   font-size: 0.9rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.6);
+  color: #44a6d9;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -138,9 +138,10 @@
   left: -15px;
   width: 70px;
   height: 35px;
-  background-color: #f6c85f;
+  background-color: #44a6d9;
   border-radius: 20px;
   animation: slideFloat 6s ease-in-out infinite alternate;
+  opacity: 0.7;
 }
 
 /* 2. Orange Hourglass Top Right */
@@ -150,7 +151,7 @@
   width: 55px;
   height: 55px;
   clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
-  background-color: #e7612f;
+  background-color: #44a6d9;
   animation: spinSlow 14s linear infinite;
 }
 
@@ -160,7 +161,7 @@
   left: 3%;
   width: 70px;
   height: 70px;
-  background-color: #1b4a83;
+  background-color: #264790;
   border-bottom-left-radius: 70px;
   animation: pulseRotate 8s ease-in-out infinite alternate;
 }
@@ -171,7 +172,7 @@
   left: 42%;
   width: 22px;
   height: 22px;
-  background-color: #e7612f;
+  background-color: #44a6d9;
   border-radius: 50% 0 50% 50%;
   transform: rotate(-45deg);
   animation: floatUp 4s ease-in-out infinite alternate;
@@ -183,11 +184,11 @@
   right: -4%;
   width: 180px;
   height: 180px;
-  background-color: #f6c85f;
+  background-color: #264790;
   clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
   transform: rotate(90deg);
   animation: gentleRock 10s ease-in-out infinite alternate;
-  opacity: 0.6;
+  opacity: 0.15;
 }
 
 /* KEYFRAMES */

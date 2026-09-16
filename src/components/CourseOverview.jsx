@@ -47,7 +47,7 @@ const CourseOverview = () => {
           
           <div className="overview-image animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <div className="glass-card image-card">
-              <img src="/hero-img-3.png" alt="Student studying" className="course-img" />
+              <img src="/hero-img-3.png" alt="Student studying" className="course-img" loading="lazy" decoding="async" />
               <div className="floating-play">
                 <PlayCircle size={48} />
               </div>

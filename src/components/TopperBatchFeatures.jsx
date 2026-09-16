@@ -3,16 +3,16 @@ import { Sparkles, Video, Users, MessageCircle, FileText, Target, BrainCircuit, 
 import './TopperBatchFeatures.css';
 
 const features = [
-  { icon: <Video />, title: "500+ Hours Live Classes", color: "#3b82f6" },
-  { icon: <MessageCircle />, title: "24/7 AI Doubt Solving", color: "#8b5cf6" },
-  { icon: <Users />, title: "1-on-1 Mentorship", color: "#14b8a6" },
-  { icon: <FileText />, title: "Premium Study Material", color: "#f59e0b" },
-  { icon: <Target />, title: "Personalized Study Plan", color: "#ef4444" },
-  { icon: <BrainCircuit />, title: "Concept Building", color: "#ec4899" },
-  { icon: <HeadphonesIcon />, title: "Audio Notes", color: "#6366f1" },
-  { icon: <TrendingUp />, title: "Performance Analytics", color: "#10b981" },
-  { icon: <Trophy />, title: "All India Mock Tests", color: "#f97316" },
-  { icon: <Sparkles />, title: "Topper Strategy Sessions", color: "#0ea5e9" }
+  { icon: <Video />, title: "500+ Hours Live Classes", color: "#264790" },
+  { icon: <MessageCircle />, title: "24/7 AI Doubt Solving", color: "#44a6d9" },
+  { icon: <Users />, title: "1-on-1 Mentorship", color: "#264790" },
+  { icon: <FileText />, title: "Premium Study Material", color: "#44a6d9" },
+  { icon: <Target />, title: "Personalized Study Plan", color: "#264790" },
+  { icon: <BrainCircuit />, title: "Concept Building", color: "#44a6d9" },
+  { icon: <HeadphonesIcon />, title: "Audio Notes", color: "#264790" },
+  { icon: <TrendingUp />, title: "Performance Analytics", color: "#44a6d9" },
+  { icon: <Trophy />, title: "All India Mock Tests", color: "#264790" },
+  { icon: <Sparkles />, title: "Topper Strategy Sessions", color: "#44a6d9" }
 ];
 
 const TopperBatchFeatures = () => {

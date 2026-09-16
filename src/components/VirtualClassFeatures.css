@@ -52,7 +52,7 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: var(--primary-main);
+  background: #264790;
   animation: live-pulse 2s infinite ease-out;
   z-index: 0;
 }
@@ -62,7 +62,7 @@
   height: 70px;
   border-radius: 50%;
   background: white;
-  color: var(--primary-main);
+  color: #264790;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,13 +79,13 @@
 
 .vc-card:hover .vc-icon {
   transform: scale(1.1) rotate(5deg);
-  background: var(--primary-main);
+  background: #264790;
   color: white;
 }
 
 .vc-card h3 {
   font-size: 1.5rem;
-  color: var(--primary-dark);
+  color: #264790;
   margin-bottom: 1rem;
   font-weight: 800;
 }

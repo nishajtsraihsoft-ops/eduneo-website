@@ -16,7 +16,7 @@ const FAQ = () => {
     <section className="faq section">
       <div className="container">
         <div className="section-header text-center" style={{textAlign: 'center', margin: '0 auto 4rem auto', maxWidth: '600px'}}>
-          <h2 style={{fontSize: '3rem', color: 'var(--primary-dark)'}}>Frequently Asked Questions</h2>
+          <h2 style={{fontSize: '3rem', color: '#0A0E1A'}}>Frequently Asked Questions</h2>
           <p style={{fontSize: '1.2rem', color: 'var(--text-muted)'}}>Got questions? We've got answers.</p>
         </div>
 

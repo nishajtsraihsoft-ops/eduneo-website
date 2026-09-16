@@ -7,29 +7,29 @@ const programs = [
     title: 'LKG & UKG',
     desc: 'Foundational learning with interactive games, basic numeracy, and phonics.',
     icon: <BookOpen />,
-    color: '#3b82f6',
-    bg: 'rgba(59, 130, 246, 0.1)'
+    color: '#264790',
+    bg: 'rgba(38, 71, 144, 0.08)'
   },
   {
     title: 'Primary (Class 1-4)',
     desc: 'Building core concepts in Math, Science, and Languages through visual learning.',
     icon: <MonitorPlay />,
-    color: '#8b5cf6',
-    bg: 'rgba(139, 92, 246, 0.1)'
+    color: '#44a6d9',
+    bg: 'rgba(68, 166, 217, 0.08)'
   },
   {
     title: 'Middle School (Class 5-8)',
     desc: 'Advanced problem solving, critical thinking, and structured curriculum coverage.',
     icon: <Users />,
-    color: '#10b981',
-    bg: 'rgba(16, 185, 129, 0.1)'
+    color: '#264790',
+    bg: 'rgba(38, 71, 144, 0.08)'
   },
   {
     title: 'High School (Class 9-12)',
     desc: 'Board exam preparation, doubt clearing, and personalized mentorship.',
     icon: <GraduationCap />,
-    color: '#f59e0b',
-    bg: 'rgba(245, 158, 11, 0.1)'
+    color: '#44a6d9',
+    bg: 'rgba(68, 166, 217, 0.08)'
   }
 ];
 

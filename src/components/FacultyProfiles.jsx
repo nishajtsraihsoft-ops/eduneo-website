@@ -13,7 +13,7 @@ const FacultyProfiles = () => {
     <section className="faculty section bg-light-gray">
       <div className="container">
         <div className="section-header text-center" style={{textAlign: 'center', marginBottom: '3rem'}}>
-          <h2 style={{fontSize: '3rem', color: 'var(--primary-dark)'}}>Meet Our Expert Tutors</h2>
+          <h2 style={{fontSize: '3rem', color: '#0A0E1A'}}>Meet Our Expert Tutors</h2>
           <p style={{fontSize: '1.2rem', color: 'var(--text-muted)'}}>Learn from highly qualified and passionate educators.</p>
         </div>
 

@@ -25,7 +25,10 @@ const Navbar = () => {
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo">
-          <img src="/eduneo-logo.png" alt="Eduneo Logo" className="logo-image" />
+          <picture>
+            <source srcSet="/eduneo-logo.webp" type="image/webp" />
+            <img src="/eduneo-logo.png" alt="Eduneo Logo" className="logo-image" loading="eager" fetchPriority="high" decoding="async" />
+          </picture>
         </Link>
 
         <div 

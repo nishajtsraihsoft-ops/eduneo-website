@@ -28,19 +28,19 @@
 
 /* Colors and Backgrounds */
 .bg-eduneo-blue {
-  background-color: #1b4981;
+  background-color: #ffffff;
 }
 
 .bg-white {
   background-color: #ffffff;
 }
 
-.text-white { color: #ffffff !important; }
-.text-light { color: #cbd5e1 !important; }
-.text-yellow { color: #f7cd55 !important; }
-.text-green-light { color: #4ade80 !important; }
-.text-orange-light { color: #fb923c !important; }
-.bg-white-10 { background-color: rgba(255, 255, 255, 0.1); }
+.text-white { color: #0a0e1a !important; }
+.text-light { color: #475569 !important; }
+.text-yellow { color: #44a6d9 !important; }
+.text-green-light { color: #264790 !important; }
+.text-orange-light { color: #44a6d9 !important; }
+.bg-white-10 { background-color: rgba(38, 71, 144, 0.06); }
 
 /* Left Info Side Typography */
 .contact-subtitle-split {
@@ -49,6 +49,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 4px;
+  color: #44a6d9 !important;
   margin-bottom: 1.5rem;
 }
 
@@ -57,12 +58,14 @@
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -2px;
+  color: #264790 !important;
   margin-bottom: 1.5rem;
 }
 
 .contact-desc-split {
   font-size: 1.25rem;
   line-height: 1.7;
+  color: #334155 !important;
   margin-bottom: 4rem;
 }
 
@@ -118,7 +121,7 @@
 .form-split-title {
   font-size: 2rem;
   font-weight: 800;
-  color: #0f172a;
+  color: #264790;
   margin-bottom: 2.5rem;
 }
 
@@ -146,7 +149,7 @@
 .split-form-group label {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #334155;
+  color: #264790;
 }
 
 .split-form-group input,
@@ -171,9 +174,9 @@
 .split-form-group select:focus,
 .split-form-group textarea:focus {
   outline: none;
-  border-color: #1b4981;
+  border-color: #44a6d9;
   background-color: #ffffff;
-  box-shadow: 0 0 0 4px rgba(27, 73, 129, 0.1);
+  box-shadow: 0 0 0 4px rgba(68, 166, 217, 0.2);
 }
 
 .split-submit-btn {
@@ -185,18 +188,19 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: #ffffff;
-  background-color: #1b4981;
+  background: linear-gradient(135deg, #264790 0%, #44a6d9 100%);
   border: none;
-  border-radius: 8px;
+  border-radius: 50px;
   cursor: pointer;
   transition: all 0.2s ease;
   margin-top: 1.5rem;
+  box-shadow: 0 4px 15px rgba(38, 71, 144, 0.25);
 }
 
 .split-submit-btn:hover {
-  background-color: #12345d;
+  background: linear-gradient(135deg, #1f3b78 0%, #308ec4 100%);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(27, 73, 129, 0.2);
+  box-shadow: 0 6px 20px rgba(68, 166, 217, 0.4);
 }
 
 /* Responsive */

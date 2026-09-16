@@ -3,12 +3,16 @@ import './ScholarshipCarousel.css';
 
 const banners = [
   {
-    desktop: '/scholarship-banner-2.png',
-    mobile: '/mobile-scholarship-banner-1.png'
+    desktopWebp: '/scholarship-banner-2.webp',
+    desktopPng: '/scholarship-banner-2.png',
+    mobileWebp: '/mobile-scholarship-banner-1.webp',
+    mobilePng: '/mobile-scholarship-banner-1.png'
   },
   {
-    desktop: '/scholarship-banner-3.png',
-    mobile: '/mobile-scholarship-banner-2.png'
+    desktopWebp: '/scholarship-banner-3.webp',
+    desktopPng: '/scholarship-banner-3.png',
+    mobileWebp: '/mobile-scholarship-banner-2.webp',
+    mobilePng: '/mobile-scholarship-banner-2.png'
   }
 ];
 
@@ -54,8 +58,16 @@ const ScholarshipCarousel = () => {
         {extendedBanners.map((banner, index) => (
           <div className="scholarship-slide" key={index}>
             <picture>
-              <source media="(max-width: 768px)" srcSet={banner.mobile} />
-              <img src={banner.desktop} alt={`Scholarship Banner ${index + 1}`} className="scholarship-img" />
+              <source media="(max-width: 768px)" type="image/webp" srcSet={banner.mobileWebp} />
+              <source media="(max-width: 768px)" srcSet={banner.mobilePng} />
+              <source type="image/webp" srcSet={banner.desktopWebp} />
+              <img 
+                src={banner.desktopPng} 
+                alt={`Scholarship Banner ${(index % banners.length) + 1}`} 
+                className="scholarship-img" 
+                loading={index === 0 ? "eager" : "lazy"} 
+                decoding="async" 
+              />
             </picture>
           </div>
         ))}

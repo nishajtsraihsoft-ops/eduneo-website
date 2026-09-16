@@ -38,8 +38,8 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: rgba(59, 130, 246, 0.1);
-  color: var(--primary-main);
+  background: rgba(38, 71, 144, 0.08);
+  color: #264790;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,9 +49,9 @@
 
 .step-card:hover .step-icon-wrapper {
   transform: scale(1.1) rotate(5deg);
-  background: var(--primary-main);
+  background: #264790;
   color: white;
-  box-shadow: var(--shadow-glow-blue);
+  box-shadow: 0 10px 25px rgba(38, 71, 144, 0.3);
 }
 
 .step-icon-wrapper svg {
