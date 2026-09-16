@@ -36,7 +36,10 @@ function App() {
   return (
     <>
       <div className={`global-loader ${!isLoading ? 'fade-out' : ''}`}>
-        <img src="/eduneo-logo.png" alt="Eduneo Loading..." className="loader-logo" />
+        <picture>
+          <source srcSet="/eduneo-logo.webp" type="image/webp" />
+          <img src="/eduneo-logo.png" alt="Eduneo Loading..." className="loader-logo" decoding="async" />
+        </picture>
       </div>
       
       <div className="app">

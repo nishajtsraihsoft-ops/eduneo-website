@@ -1,20 +1,20 @@
 .navbar {
   position: fixed;
-  top: 20px;
+  top: 16px;
   left: 5%;
   width: 90%;
   z-index: 1000;
   transition: all 0.3s ease;
   background-color: #ffffff;
   border-radius: 20px;
-  padding: 0.75rem 2rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.03);
+  padding: 0.6rem 2.5rem;
+  box-shadow: 0 8px 30px rgba(38, 71, 144, 0.1);
+  border: 1px solid rgba(38, 71, 144, 0.08);
 }
 
 .navbar.scrolled {
-  padding: 0.5rem 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  padding: 0.45rem 2.5rem;
+  box-shadow: 0 10px 35px rgba(38, 71, 144, 0.15);
 }
 
 .navbar-container {
@@ -31,14 +31,15 @@
 }
 
 .logo-image {
-  height: 50px;
+  height: 34px;
+  max-height: 38px;
   width: auto;
   object-fit: contain;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .navbar-logo:hover .logo-image {
-  transform: translateY(-2px);
+  transform: translateY(-1px) scale(1.03);
 }
 
 .navbar-links {
@@ -48,8 +49,8 @@
 }
 
 .navbar-links a:not(.btn) {
-  font-weight: 800;
-  color: #1b4a83;
+  font-weight: 700;
+  color: #264790;
   font-size: 1rem;
   transition: color 0.2s ease;
   padding: 0.5rem;
@@ -64,7 +65,7 @@
   transform: translateX(-50%);
   width: 0;
   height: 3px;
-  background-color: #e7612f;
+  background: #44a6d9;
   transition: width 0.3s ease;
   border-radius: 3px;
 }
@@ -76,7 +77,7 @@
 
 .navbar-links a:not(.btn):hover,
 .navbar-links a.active {
-  color: #e7612f;
+  color: #44a6d9;
 }
 
 .navbar-cta .btn-navbar-cta {
@@ -84,16 +85,17 @@
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 800;
-  background: #e7612f;
+  background: linear-gradient(135deg, #264790 0%, #44a6d9 100%);
   color: white;
   transition: all 0.3s ease;
   border: none;
-  box-shadow: none;
+  box-shadow: 0 4px 15px rgba(38, 71, 144, 0.25);
 }
 
 .navbar-cta .btn-navbar-cta:hover {
   transform: translateY(-2px);
-  background: #d15628;
+  box-shadow: 0 6px 20px rgba(68, 166, 217, 0.4);
+  background: linear-gradient(135deg, #1f3b78 0%, #3994c4 100%);
 }
 
 .mobile-cta {
@@ -104,7 +106,7 @@
   display: none;
   background: transparent;
   border: none;
-  color: #1b4a83;
+  color: #264790;
   cursor: pointer;
   z-index: 1001;
   width: 44px;
@@ -124,7 +126,8 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(38, 71, 144, 0.4);
+  backdrop-filter: blur(4px);
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -139,6 +142,11 @@
 }
 
 @media (max-width: 768px) {
+  .logo-image {
+    height: 26px;
+    max-height: 30px;
+  }
+
   .navbar-cta {
     display: none;
   }
@@ -156,8 +164,8 @@
     position: absolute;
     top: calc(100% + 10px);
     right: 0;
-    width: 220px; /* Standard dropdown width */
-    height: auto; /* Not full height */
+    width: 220px;
+    height: auto;
     background: #ffffff;
     border-radius: 15px;
     flex-direction: column;
@@ -166,9 +174,8 @@
     padding: 1rem 1.5rem;
     gap: 0;
     z-index: 1000;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(38, 71, 144, 0.15);
     
-    /* Dropdown animation */
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -184,7 +191,7 @@
   .navbar-links a:not(.btn) {
     font-size: 1.05rem;
     font-weight: 700;
-    color: #1a1640;
+    color: #264790;
     width: 100%;
     display: block;
     padding: 0.75rem 0;
@@ -198,7 +205,7 @@
 
   .navbar-links a:not(.btn):hover,
   .navbar-links a.active {
-    color: #e7612f;
+    color: #44a6d9;
   }
 
   .mobile-cta {

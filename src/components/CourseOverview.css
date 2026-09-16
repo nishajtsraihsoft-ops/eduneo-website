@@ -62,10 +62,10 @@
   line-height: 1.5;
 }
 
-.text-blue { color: #3b82f6; }
-.text-purple { color: #8b5cf6; }
-.text-green { color: #10b981; }
-.text-orange { color: #f97316; }
+.text-blue { color: #264790; }
+.text-purple { color: #44a6d9; }
+.text-green { color: #264790; }
+.text-orange { color: #44a6d9; }
 
 @keyframes float-image {
   0% { transform: translateY(0); }
@@ -103,7 +103,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-main);
+  color: #264790;
   box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;

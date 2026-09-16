@@ -3,10 +3,10 @@ import { CalendarDays, CalendarClock, CalendarRange, CalendarCheck2 } from 'luci
 import './ScheduleOverview.css';
 
 const schedules = [
-  { icon: <CalendarDays />, title: "Every Week", desc: "Regular consistent classes", color: "#3b82f6" },
-  { icon: <CalendarRange />, title: "Every 2 Weeks", desc: "Bi-weekly intensive sessions", color: "#8b5cf6" },
-  { icon: <CalendarCheck2 />, title: "Every Saturday", desc: "Weekend special batches", color: "#f59e0b" },
-  { icon: <CalendarClock />, title: "Every 4 Weeks", desc: "Monthly grand mock tests", color: "#10b981" }
+  { icon: <CalendarDays />, title: "Every Week", desc: "Regular consistent classes", color: "#264790" },
+  { icon: <CalendarRange />, title: "Every 2 Weeks", desc: "Bi-weekly intensive sessions", color: "#44a6d9" },
+  { icon: <CalendarCheck2 />, title: "Every Saturday", desc: "Weekend special batches", color: "#264790" },
+  { icon: <CalendarClock />, title: "Every 4 Weeks", desc: "Monthly grand mock tests", color: "#44a6d9" }
 ];
 
 const ScheduleOverview = () => {

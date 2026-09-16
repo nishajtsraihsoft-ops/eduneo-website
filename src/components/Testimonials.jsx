@@ -43,7 +43,6 @@ const Testimonials = () => {
               </div>
               <p className="test-text">"{item.text}"</p>
               <div className="test-author">
-                <div className="author-avatar"></div>
                 <div>
                   <h4>{item.name}</h4>
                   <span>{item.role}</span>

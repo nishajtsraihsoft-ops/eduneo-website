@@ -42,9 +42,6 @@ const ParentTestimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div className="testimonial-card glass-card" key={testimonial.id} style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="testimonial-header">
-                <div className="testimonial-avatar">
-                  {testimonial.name.charAt(0)}
-                </div>
                 <div className="testimonial-meta">
                   <h4 className="testimonial-name">{testimonial.name}</h4>
                   <span className="testimonial-location">📍 {testimonial.location}</span>

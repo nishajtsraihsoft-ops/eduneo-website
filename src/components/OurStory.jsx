@@ -17,7 +17,7 @@ const OurStory = () => {
           </div>
           <div className="story-image-wrapper animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <div className="glass-card story-image-card">
-              <img src="/hero-img-2.png" alt="Students learning" className="story-image" />
+              <img src="/hero-img-2.png" alt="Students learning" className="story-image" loading="lazy" decoding="async" />
               <div className="floating-stat glass-card">
                 <h3>10,000+</h3>
                 <p>Happy Students</p>

@@ -16,14 +16,14 @@ const About = () => {
       {/* Top Geometric Banner */}
       <div style={{ width: '100%', height: '140px', overflow: 'hidden', pointerEvents: 'none' }}>
         <svg viewBox="0 0 1600 260" style={{ width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid slice">
-           <polygon points="0,160 0,260 100,260" fill="#67a775" />
-           <polygon points="100,0 300,0 450,130 100,130" fill="#e7612f" />
-           <polygon points="100,130 450,130 300,260 100,260" fill="#f7cd55" />
-           <rect x="450" y="0" width="400" height="260" fill="#55a8e0" />
-           <path d="M 850,0 A 130 130 0 0 1 850,260 Z" fill="#f7cd55" />
-           <path d="M 1110,0 A 130 130 0 0 0 1110,260 Z" fill="#f7cd55" />
-           <polygon points="1110,260 1310,260 1410,100" fill="#1b4a83" />
-           <polygon points="1410,0 1600,0 1600,260" fill="#e7612f" />
+           <polygon points="0,160 0,260 100,260" fill="#44a6d9" />
+           <polygon points="100,0 300,0 450,130 100,130" fill="#264790" />
+           <polygon points="100,130 450,130 300,260 100,260" fill="#44a6d9" />
+           <rect x="450" y="0" width="400" height="260" fill="#264790" />
+           <path d="M 850,0 A 130 130 0 0 1 850,260 Z" fill="#44a6d9" />
+           <path d="M 1110,0 A 130 130 0 0 0 1110,260 Z" fill="#44a6d9" />
+           <polygon points="1110,260 1310,260 1410,100" fill="#264790" />
+           <polygon points="1410,0 1600,0 1600,260" fill="#44a6d9" />
         </svg>
       </div>
 
@@ -32,16 +32,16 @@ const About = () => {
         
         {/* Floating Education Design Elements */}
         <div className="hero-floating-element element-edu-1">
-          <GraduationCap size={42} strokeWidth={1.5} color="#55a8e0" />
+          <GraduationCap size={42} strokeWidth={1.5} color="#44a6d9" />
         </div>
         <div className="hero-floating-element element-edu-2">
-          <BookOpen size={36} strokeWidth={1.5} color="#f7cd55" />
+          <BookOpen size={36} strokeWidth={1.5} color="#264790" />
         </div>
         <div className="hero-floating-element element-edu-3">
-          <Pencil size={32} strokeWidth={1.5} color="#e7612f" />
+          <Pencil size={32} strokeWidth={1.5} color="#44a6d9" />
         </div>
         <div className="hero-floating-element element-edu-4">
-          <Calculator size={38} strokeWidth={1.5} color="#67a775" />
+          <Calculator size={38} strokeWidth={1.5} color="#264790" />
         </div>
 
         <div className="custom-hero-left">
@@ -61,11 +61,16 @@ const About = () => {
         <div className="custom-hero-right">
           <div className="creative-blob-container">
              <div className="creative-blob-bg"></div>
-             <img 
-               src="/about-image-1.png" 
-               alt="Student studying" 
-               className="creative-blob-img" 
-             />
+             <picture>
+               <source srcSet="/about-image-1.webp" type="image/webp" />
+               <img 
+                 src="/about-image-1.png" 
+                 alt="Student studying" 
+                 className="creative-blob-img" 
+                 loading="lazy"
+                 decoding="async"
+               />
+             </picture>
           </div>
         </div>
       </section>
@@ -77,21 +82,21 @@ const About = () => {
             <div className="mvg-minimal-grid">
               <div className="mvg-minimal-card">
                 <div className="mvg-icon-wrapper bg-blue-glow-mvg">
-                  <Target size={36} color="#1b4a83" strokeWidth={1.5} />
+                  <Target size={36} color="#2563eb" strokeWidth={1.5} />
                 </div>
                 <h3>Mission</h3>
                 <p>To make premium education accessible, interactive, and personalized for every student, regardless of their grade or syllabus.</p>
               </div>
               <div className="mvg-minimal-card">
-                <div className="mvg-icon-wrapper bg-orange-glow-mvg">
-                  <Lightbulb size={36} color="#e7612f" strokeWidth={1.5} />
+                <div className="mvg-icon-wrapper bg-amber-glow-mvg">
+                  <Lightbulb size={36} color="#f59e0b" strokeWidth={1.5} />
                 </div>
                 <h3>Vision</h3>
                 <p>To lead the future of digital education, nurturing creative, analytical, and confident thinkers who are globally competitive.</p>
               </div>
               <div className="mvg-minimal-card">
-                <div className="mvg-icon-wrapper bg-green-glow-mvg">
-                  <Heart size={36} color="#67a775" strokeWidth={1.5} />
+                <div className="mvg-icon-wrapper bg-rose-glow-mvg">
+                  <Heart size={36} color="#e11d48" strokeWidth={1.5} />
                 </div>
                 <h3>Values</h3>
                 <p>Excellence, Integrity, Innovation, Empathy, and a relentless devotion to continuous student improvement.</p>
@@ -137,7 +142,7 @@ const About = () => {
             <div className="trust-features-grid-light">
               <div className="trust-feature-card-light">
                 <div className="trust-icon-wrapper-light bg-blue-glow">
-                  <CheckCircle size={28} color="#55a8e0" />
+                  <CheckCircle size={28} color="#44a6d9" />
                 </div>
                 <h4>Verified Faculty</h4>
                 <p>Strict academic and background screening ensures your child learns only from top-tier educators.</p>
@@ -145,7 +150,7 @@ const About = () => {
               
               <div className="trust-feature-card-light">
                 <div className="trust-icon-wrapper-light bg-orange-glow">
-                  <CheckCircle size={28} color="#e7612f" />
+                  <CheckCircle size={28} color="#264790" />
                 </div>
                 <h4>Progress Dashboards</h4>
                 <p>Get instant, transparent insight into grades, attendance, and overall performance in real-time.</p>
@@ -153,7 +158,7 @@ const About = () => {
               
               <div className="trust-feature-card-light">
                 <div className="trust-icon-wrapper-light bg-yellow-glow">
-                  <CheckCircle size={28} color="#f7cd55" />
+                  <CheckCircle size={28} color="#44a6d9" />
                 </div>
                 <h4>Active PTM Frameworks</h4>
                 <p>Regular parent-teacher meetings ensure complete alignment to resolve any academic gaps quickly.</p>

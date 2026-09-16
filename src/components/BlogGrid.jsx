@@ -43,7 +43,7 @@ const BlogGrid = () => {
           {blogPosts.map((post, idx) => (
             <article key={post.id} className="blog-card glass-card animate-slide-up" style={{ animationDelay: `${idx * 0.15}s` }}>
               <div className="blog-image">
-                <img src={post.image} alt={post.title} />
+                <img src={post.image} alt={post.title} loading="lazy" decoding="async" />
                 <span className="blog-category">{post.category}</span>
               </div>
               <div className="blog-content">

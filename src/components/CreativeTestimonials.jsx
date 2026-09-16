@@ -80,20 +80,11 @@ const CreativeTestimonials = () => {
             <div className="ts-marquee-content">
               {testimonialsData.map((t) => (
                 <div key={t.id} className="ts-card">
-                  <div className={`ts-avatar-wrapper ${t.colorClass}`}>
-                    <User size={64} color="white" strokeWidth={1.5} />
+                  <div className="ts-card-top">
+                    <h4 className="ts-name">{t.name}</h4>
+                    <span className="ts-stars">{t.stars}</span>
                   </div>
-                  <div className="ts-info">
-                    <div className="ts-info-top" style={{ gap: '0.25rem' }}>
-                      <h4 className="ts-name" style={{ textTransform: 'capitalize' }}>{t.name}</h4>
-                      <span className="ts-demographics" style={{ color: '#f1b308', fontSize: '0.8rem', letterSpacing: '2px' }}>{t.stars}</span>
-                    </div>
-                    <div className="ts-info-bottom">
-                      <p style={{ fontStyle: 'italic', fontSize: '0.9rem', color: '#4a5568', lineHeight: 1.5, margin: 0 }}>
-                        "{t.quote}"
-                      </p>
-                    </div>
-                  </div>
+                  <p className="ts-quote">"{t.quote}"</p>
                 </div>
               ))}
             </div>
@@ -101,20 +92,11 @@ const CreativeTestimonials = () => {
             <div className="ts-marquee-content" aria-hidden="true">
               {testimonialsData.map((t) => (
                 <div key={t.id + '-dup'} className="ts-card">
-                  <div className={`ts-avatar-wrapper ${t.colorClass}`}>
-                    <User size={64} color="white" strokeWidth={1.5} />
+                  <div className="ts-card-top">
+                    <h4 className="ts-name">{t.name}</h4>
+                    <span className="ts-stars">{t.stars}</span>
                   </div>
-                  <div className="ts-info">
-                    <div className="ts-info-top" style={{ gap: '0.25rem' }}>
-                      <h4 className="ts-name" style={{ textTransform: 'capitalize' }}>{t.name}</h4>
-                      <span className="ts-demographics" style={{ color: '#f1b308', fontSize: '0.8rem', letterSpacing: '2px' }}>{t.stars}</span>
-                    </div>
-                    <div className="ts-info-bottom">
-                      <p style={{ fontStyle: 'italic', fontSize: '0.9rem', color: '#4a5568', lineHeight: 1.5, margin: 0 }}>
-                        "{t.quote}"
-                      </p>
-                    </div>
-                  </div>
+                  <p className="ts-quote">"{t.quote}"</p>
                 </div>
               ))}
             </div>

@@ -12,7 +12,10 @@ const LetLearningBanner = () => {
             <a href="https://wa.me/917034600908?text=I%20would%20like%20to%20explore%20free%20demo%20classes" target="_blank" rel="noopener noreferrer" className="btn btn-yellow">EXPLORE FREE DEMO CLASSES</a>
           </div>
           <div className="ll-image-container">
-            <img src="/student-portrait.png" alt="Let Learning Come To You" className="ll-image" />
+            <picture>
+              <source srcSet="/student-portrait.webp" type="image/webp" />
+              <img src="/student-portrait.png" alt="Let Learning Come To You" className="ll-image" loading="lazy" decoding="async" />
+            </picture>
           </div>
         </div>
       </div>

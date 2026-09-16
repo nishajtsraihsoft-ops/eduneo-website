@@ -75,7 +75,7 @@
 }
 
 .custom-about-label {
-  color: #e5602b;
+  color: #44a6d9;
   font-weight: 800;
   font-size: 1.1rem;
   margin-bottom: 1rem;
@@ -85,7 +85,7 @@
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.15;
-  color: #1a1a1a;
+  color: #0A0E1A;
   margin-bottom: 1.5rem;
   letter-spacing: -1px;
 }
@@ -93,7 +93,7 @@
 .custom-hero-paragraph {
   font-size: 1.15rem;
   line-height: 1.6;
-  color: #333333;
+  color: #475569;
 }
 
 .custom-hero-right {
@@ -186,12 +186,12 @@
 .mvg-minimal-card h3 {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #e7612f; /* Orange */
+  color: #264790;
   margin: 0 0 1rem 0;
 }
 
 .mvg-minimal-card p {
-  color: #333333;
+  color: #475569;
   font-size: 1rem;
   line-height: 1.6;
   margin: 0;
@@ -205,7 +205,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  border: 3px solid #1a1a1a;
+  border: 3px solid #264790;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -213,20 +213,23 @@
   transform: scale(1.1) rotate(-8deg);
 }
 
-/* Backgrounds & Shadows for MVG Icons */
+/* Backgrounds, Borders & Shadows for MVG Icons */
 .bg-blue-glow-mvg {
-  background-color: #e6f0fa;
-  box-shadow: 0 4px 0 #1b4a83;
+  background-color: #eff6ff;
+  border-color: #2563eb;
+  box-shadow: 0 4px 0 #2563eb;
 }
 
-.bg-orange-glow-mvg {
-  background-color: #fff2ec;
-  box-shadow: 0 4px 0 #e7612f;
+.bg-amber-glow-mvg {
+  background-color: #fffbeb;
+  border-color: #f59e0b;
+  box-shadow: 0 4px 0 #f59e0b;
 }
 
-.bg-green-glow-mvg {
-  background-color: #ebf7ee;
-  box-shadow: 0 4px 0 #67a775;
+.bg-rose-glow-mvg {
+  background-color: #fff1f2;
+  border-color: #e11d48;
+  box-shadow: 0 4px 0 #e11d48;
 }
 
 

@@ -48,14 +48,14 @@ const Contact = () => {
       <div className="contact-top-banner">
         <svg viewBox="0 0 1600 260" preserveAspectRatio="xMidYMid slice">
            <polygon points="0,0 100,0 100,160 0,160" fill="#f1f5f9" />
-           <polygon points="0,160 0,260 100,260" fill="#55a8e0" />
-           <polygon points="100,0 300,0 450,130 100,130" fill="#f7cd55" />
-           <polygon points="100,130 450,130 300,260 100,260" fill="#e7612f" />
-           <rect x="450" y="0" width="400" height="260" fill="#67a775" />
-           <path d="M 850,0 A 130 130 0 0 1 850,260 Z" fill="#e7612f" />
-           <path d="M 1110,0 A 130 130 0 0 0 1110,260 Z" fill="#e7612f" />
-           <polygon points="1110,260 1310,260 1410,100" fill="#1b4a83" />
-           <polygon points="1410,0 1600,0 1600,260" fill="#55a8e0" />
+           <polygon points="0,160 0,260 100,260" fill="#44a6d9" />
+           <polygon points="100,0 300,0 450,130 100,130" fill="#264790" />
+           <polygon points="100,130 450,130 300,260 100,260" fill="#44a6d9" />
+           <rect x="450" y="0" width="400" height="260" fill="#264790" />
+           <path d="M 850,0 A 130 130 0 0 1 850,260 Z" fill="#44a6d9" />
+           <path d="M 1110,0 A 130 130 0 0 0 1110,260 Z" fill="#44a6d9" />
+           <polygon points="1110,260 1310,260 1410,100" fill="#264790" />
+           <polygon points="1410,0 1600,0 1600,260" fill="#44a6d9" />
         </svg>
       </div>
 

@@ -12,7 +12,10 @@ const Footer = () => {
             {/* Brand & About */}
             <div className="footer-col brand-col">
               <Link to="/" className="footer-logo">
-                <img src="/eduneo-logo.png" alt="Eduneo Logo" />
+                <picture>
+                  <source srcSet="/eduneo-logo.webp" type="image/webp" />
+                  <img src="/eduneo-logo.png" alt="Eduneo Logo" loading="lazy" decoding="async" />
+                </picture>
               </Link>
               <p className="footer-desc">
                 Empowering students from playful foundational learning to rigorous exam preparation with personalized, AI-enhanced education.
