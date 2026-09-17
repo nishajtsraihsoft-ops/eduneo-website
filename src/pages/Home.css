@@ -331,6 +331,26 @@
   transition: transform 0.3s ease;
 }
 
+@media (max-width: 576px) {
+  .icon-row {
+    gap: 1.25rem 0.75rem;
+  }
+  .icon-item {
+    width: 130px;
+  }
+  .icon-wrapper-outline {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .icon-item {
+    width: 110px;
+  }
+}
+
 .icon-wrapper-outline {
   width: 90px;
   height: 90px;

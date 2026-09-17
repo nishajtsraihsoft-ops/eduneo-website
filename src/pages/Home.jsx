@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, BookOpen, MonitorPlay, Star, CheckCircle, Lightbulb, TrendingUp, Award, Book, Microscope, Users, Clock, Target, Play, ChevronRight, Calculator, FlaskConical, Code, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import AboutEduNeo from '../components/AboutEduNeo';
+import FoundersMessage from '../components/FoundersMessage';
 import WhyEduNeo from '../components/WhyEduNeo';
 import ClassesProvided from '../components/ClassesProvided';
 import LearningSupport from '../components/LearningSupport';
@@ -82,6 +83,10 @@ const Home = () => {
 
       <ScrollReveal direction="up">
         <AboutEduNeo />
+      </ScrollReveal>
+
+      <ScrollReveal direction="up">
+        <FoundersMessage />
       </ScrollReveal>
 
       <ScrollReveal direction="up">
