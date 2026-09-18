@@ -7,7 +7,7 @@ const ScrollReveal = ({
   delay = 0, 
   duration = 0.6,
   className = '',
-  amount = 0.2 // how much of the component needs to be in view before it animates (0 to 1)
+  amount = 0 // trigger as soon as it enters
 }) => {
   const getVariants = () => {
     const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
@@ -34,7 +34,7 @@ const ScrollReveal = ({
       variants={getVariants()}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount }}
+      viewport={{ once: true, amount, margin: "50px" }}
       transition={{ duration, delay, ease: "easeOut" }}
     >
       {children}

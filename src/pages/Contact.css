@@ -269,5 +269,33 @@
   .split-submit-btn {
     padding: 1rem 1.5rem;
     font-size: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page-wrapper {
+    padding-top: 70px;
+  }
+
+  .contact-title-split {
+    font-size: 1.95rem;
+  }
+
+  .contact-desc-split {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-half {
+    padding: 1.75rem 1rem;
+  }
+
+  .split-form-group input,
+  .split-form-group select,
+  .split-form-group textarea {
+    padding: 0.85rem 1rem;
+    font-size: 0.95rem;
   }
 }

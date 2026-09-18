@@ -75,32 +75,46 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission, Vision, Values Minimal Grid */}
-      <ScrollReveal direction="up" delay={0.1}>
-        <section className="mvg-minimal-section">
+      {/* Mission, Vision, Values Premium Redesign */}
+      <ScrollReveal direction="up">
+        <section className="premium-mvg-section">
           <div className="container">
-            <div className="mvg-minimal-grid">
-              <div className="mvg-minimal-card">
-                <div className="mvg-icon-wrapper bg-blue-glow-mvg">
-                  <Target size={36} color="#2563eb" strokeWidth={1.5} />
+            <div className="premium-mvg-header text-center">
+              <h2>Our Core Philosophy</h2>
+              <p>The guiding principles that drive our dedication to student success.</p>
+            </div>
+            <div className="premium-mvg-grid">
+              
+              <div className="premium-mvg-card">
+                <div className="premium-mvg-icon-wrapper premium-blue-glow">
+                  <div className="premium-icon-inner">
+                    <Target size={32} color="#2563eb" strokeWidth={1.5} />
+                  </div>
                 </div>
                 <h3>Mission</h3>
                 <p>To make premium education accessible, interactive, and personalized for every student, regardless of their grade or syllabus.</p>
               </div>
-              <div className="mvg-minimal-card">
-                <div className="mvg-icon-wrapper bg-amber-glow-mvg">
-                  <Lightbulb size={36} color="#f59e0b" strokeWidth={1.5} />
+
+              <div className="premium-mvg-card">
+                <div className="premium-mvg-icon-wrapper premium-amber-glow">
+                  <div className="premium-icon-inner">
+                    <Lightbulb size={32} color="#f59e0b" strokeWidth={1.5} />
+                  </div>
                 </div>
                 <h3>Vision</h3>
                 <p>To lead the future of digital education, nurturing creative, analytical, and confident thinkers who are globally competitive.</p>
               </div>
-              <div className="mvg-minimal-card">
-                <div className="mvg-icon-wrapper bg-rose-glow-mvg">
-                  <Heart size={36} color="#e11d48" strokeWidth={1.5} />
+
+              <div className="premium-mvg-card">
+                <div className="premium-mvg-icon-wrapper premium-rose-glow">
+                  <div className="premium-icon-inner">
+                    <Heart size={32} color="#e11d48" strokeWidth={1.5} />
+                  </div>
                 </div>
                 <h3>Values</h3>
                 <p>Excellence, Integrity, Innovation, Empathy, and a relentless devotion to continuous student improvement.</p>
               </div>
+
             </div>
           </div>
         </section>
@@ -109,7 +123,7 @@ const About = () => {
 
 
       {/* Why Parents Trust Us (Light Premium Redesign) */}
-      <ScrollReveal direction="up" delay={0.2}>
+      <ScrollReveal direction="up">
         <section className="trust-section-light">
           <div className="container">
             

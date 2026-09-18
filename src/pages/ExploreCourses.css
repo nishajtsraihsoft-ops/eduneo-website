@@ -12,11 +12,12 @@
 .courses-hero-section {
   position: relative;
   width: 100%;
-  min-height: 280px;
+  min-height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  margin-top: 110px;
 }
 
 .courses-hero-video {
@@ -26,6 +27,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 30%;
   z-index: 0;
 }
 
@@ -313,11 +315,12 @@
 
 @media (max-width: 768px) {
   .courses-hero-section {
-    min-height: 240px;
+    min-height: 300px;
+    margin-top: 90px;
   }
   
   .courses-hero-title {
-    display: none;
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
   }
 
   .core-programs-section {
@@ -337,5 +340,21 @@
   .core-course-card {
     padding: 1.75rem;
     border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-hero-container {
+    padding: 3rem 0.5rem;
+  }
+
+  .courses-hero-badge {
+    font-size: 0.75rem;
+    padding: 0.35rem 1rem;
+    letter-spacing: 1px;
+  }
+
+  .core-course-card {
+    padding: 1.35rem 1.15rem;
   }
 }

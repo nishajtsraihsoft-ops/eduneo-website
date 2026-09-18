@@ -138,7 +138,7 @@ const BaseClasses = () => {
           <div className="bc-hero-content">
             <span className="bc-hero-badge">LKG to Grade 12 · Base Classes</span>
             <h1 className="bc-hero-title">
-              Strong Fundamentals.<br className="hidden-mobile" />
+              Strong Fundamentals. <br className="hidden-mobile" />
               Accelerated Academic Growth.
             </h1>
             <p className="bc-hero-desc">

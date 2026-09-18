@@ -21,6 +21,18 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   }, [location]);
 
+  // Prevent background scrolling when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
+
   return (
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
@@ -43,8 +55,9 @@ const Navbar = () => {
           <NavLink to="/courses">Explore Courses</NavLink>
           <NavLink to="/classes">Base Classes</NavLink>
           <NavLink to="/contact">Contact</NavLink>
-
-
+          <div className="mobile-cta-wrapper">
+            <Link to="/courses" className="btn btn-navbar-cta mobile-cta-btn" onClick={() => setIsMobileMenuOpen(false)}>Enrol Now</Link>
+          </div>
         </nav>
 
         <div className="navbar-cta">

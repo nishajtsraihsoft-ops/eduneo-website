@@ -215,3 +215,15 @@
     margin-top: 0;
   }
 }
+
+@media (max-width: 480px) {
+  .footer-main {
+    padding: 3rem 0 2rem 0;
+  }
+
+  .footer-legal-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

@@ -11,7 +11,7 @@
    ========================================================================== */
 .bc-hero-section {
   background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-  padding: 6rem 0 5rem 0;
+  padding: 9rem 0 5rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -595,7 +595,7 @@
 
 @media (max-width: 768px) {
   .bc-hero-section {
-    padding: 4.5rem 0 3.5rem 0;
+    padding: 7.5rem 0 3.5rem 0;
   }
 
   .bc-hero-title {
@@ -649,5 +649,47 @@
 
   .hidden-mobile {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .bc-hero-section {
+    padding: 7rem 0 2.5rem 0;
+  }
+
+  .bc-hero-title {
+    font-size: 1.85rem;
+  }
+
+  .bc-hero-desc {
+    font-size: 0.95rem;
+  }
+
+  .bc-overview-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: 16px;
+  }
+
+  .bc-overview-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .bc-overview-text p {
+    font-size: 0.95rem;
+  }
+
+  .bc-subject-pills {
+    gap: 0.5rem;
+  }
+
+  .subject-pill {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  .bc-subject-card,
+  .bc-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: 16px;
   }
 }
