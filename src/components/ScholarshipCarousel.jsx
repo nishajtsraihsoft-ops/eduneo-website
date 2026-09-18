@@ -24,9 +24,14 @@ const ScholarshipCarousel = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
+<<<<<<< Updated upstream
       setTransitionEnabled(true);
       setCurrentIndex((prevIndex) => prevIndex + 1);
     }, 3000); // Change image every 3 seconds
+=======
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length);
+    }, 4000); // Change image every 4 seconds
+>>>>>>> Stashed changes
 
     return () => clearInterval(timer);
   }, []);
